@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Squidward\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Squidward\\.nuget\\packages"
+    ]
+  }
+}
