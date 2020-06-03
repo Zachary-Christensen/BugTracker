@@ -54,3 +54,4 @@ C:\Users\Squidward\Desktop\AlgoSite\BugTracker\BugTracker.Data\obj\Debug\netcore
 C:\Users\Squidward\Desktop\AlgoSite\BugTracker\BugTracker.Data\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Squidward\Desktop\AlgoSite\BugTracker\BugTracker.Data\obj\Debug\netcoreapp3.1\BugTracker.Data.csproj.CoreCompileInputs.cache
 C:\Users\Squidward\Desktop\AlgoSite\BugTracker\BugTracker.Data\obj\Debug\netcoreapp3.1\BugTracker.Data.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Squidward\Desktop\AlgoSite\BugTracker\BugTracker.Data\obj\Debug\netcoreapp3.1\BugTracker.Data.csprojAssemblyReference.cache

@@ -1,0 +1,62 @@
+﻿@page
+@model BugTracker.UI.Areas.Identity.Pages.Account.DemoLoginModel
+@{
+    ViewData["Title"] = "DemoSignIn";
+    var roles = (List<IdentityRole>)ViewData["Roles"];
+}
+
+
+
+
+<div class="row justify-content-center">
+    <div class="col-md-4 col-md-offset-4">
+        <h1>@ViewData["Title"]</h1>
+        <div class="card login-card">
+            <div class="card-body login-card-body">
+                <h4 id="card-title login-card-heading">Login with a Demo account.</h4>
+                <hr />
+                <section>
+                    <form id="account" method="post">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+
+                        <div class="form-group">
+                            <div class="icon-addon">
+                                <img src="~/lib/octicons/svg/bug.svg" class="glyphicon" />
+                                <select asp-for="Input.Role" class="form-control" asp-items='@(new SelectList(roles, "Name", "Name"))'>
+                                    <option selected>-- Select a Role --</option>
+                                </select>
+                            </div>
+
+                            <span asp-validation-for="Input.Role" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                        </div>
+
+                    </form>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div class="container">
+        <div class="row justify-content-center">
+            <div class="col w-50">
+                <button name="RoleName" value="@roles[0].Name" class="btn btn-lg btn-block btn-primary rounded-0" type="submit">@roles[0].Name.Split('_')[1]</button>
+            </div>
+            <div class="col w-50">
+                <button class="p-1 btn btn-lg btn-block btn-primary rounded-0" type="button">@roles[1].Name.Split('_')[1]</button>
+            </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+            <div class="col-2">
+                <button class="p-1 btn btn-lg btn-block btn-primary rounded-0" type="button">@roles[2].Name.Split('_')[1]</button>
+            </div>
+            <div class="col-2">
+                <button class="p-1 btn btn-lg btn-block btn-primary rounded-0" type="button">@roles[3].Name.Split('_')[1]</button>
+            </div>
+        </div>
+    </div>*@
+
